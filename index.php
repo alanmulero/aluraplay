@@ -47,7 +47,7 @@ $videos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             continue; // Pula para a próxima iteração se a URL ou o título estiverem vazios
         } ?>
             <li class="videos__item">
-                <iframe width="100%" height="72%" src="<?php echo $video['url']; ?>"
+                <iframe width="100%" height="72%" src="<?= $video['url']; ?>"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -56,7 +56,7 @@ $videos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <h3><?php echo $video['title']; ?></h3>
                     <div class="acoes-video">
                         <a href="./pages/enviar-video.html">Editar</a>
-                        <a href="./pages/enviar-video.html">Excluir</a>
+                        <a href="./remover-video.php?id=<?php echo $video['id']; ?>">Excluir</a>
                     </div>
                 </div>
             </li>
