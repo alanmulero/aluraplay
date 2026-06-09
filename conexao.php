@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 $user = 'alan';
-$pass = 'Alan@4541';
+$pass = 'Ala....';
 $dbName = 'aluraplay';
 $charset = 'utf8mb4';
 
