@@ -56,7 +56,7 @@ $videos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <h3><?php echo $video['title']; ?></h3>
                     <div class="acoes-video">
                         <a href="./formulario.php?id=<?php echo $video['id']; ?>">Editar</a>
-
+                        <a href="./pages/enviar-video.html?php echo $video['id']; ?>">Novo Vídeo</a>
                         <a href="./remover-video.php?id=<?php echo $video['id']; ?>">Excluir</a>
                     </div>
                 </div>
