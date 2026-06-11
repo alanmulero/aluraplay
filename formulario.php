@@ -27,12 +27,12 @@ if(!$id){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/estilos-form.css">
-    <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-form.css">
+    <link rel="stylesheet" href="css/flexbox.css">
     <title>AluraPlay</title>
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -41,8 +41,7 @@ if(!$id){
     <header>
 
         <nav class="cabecalho">
-            <a class="logo" href="../index.php"></a>
-
+            <a class="logo" href="./index.php"></a>
             <div class="cabecalho__icones">
                 <a href="./enviar-video.html" class="cabecalho__videos"></a>
                 <a href="./login.html" class="cabecalho__sair">Sair</a>
@@ -53,7 +52,7 @@ if(!$id){
 
     <main class="container">
 
-        <form class="container__formulario" action=<?php echo $id !== false ? "../editar-video.php?id=" . $id : "../novo-video.php"; ?> method="post">
+        <form class="container__formulario" action="<?php echo $id !== false ? 'editar-video.php?id=' . $id : 'novo-video.php'; ?>" method="post">
             <h2 class="formulario__titulo">Envie um vídeo!</h2>
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="url">Link embed</label>
